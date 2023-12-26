@@ -223,6 +223,9 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 text-transform: capitalize;
+margin-left: -1.2rem;
+  
+
 }
 
 .input_inscription{
@@ -325,13 +328,26 @@ line-height: normal;
 
 }
 
-@media screen and (max-width: 680px) {
-  .inscription{
-    
+@media screen and (max-width: 768px) {
+  .inputs{
+  
     display: flex;
     flex-wrap: wrap;
      align-items: center;
      justify-content: center;
-     grid-gap: 25%;
+    gap:3.5rem
      }
+
+}
+
+
+@media screen and (max-width: 480px) {
+.login{
+  
+  display: flex;
+  flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   grid-gap: 25%;
+   }
 }
