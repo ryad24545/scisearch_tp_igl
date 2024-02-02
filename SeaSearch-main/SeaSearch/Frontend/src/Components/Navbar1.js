@@ -19,13 +19,13 @@ function Navbar1() {
       <Link to="/">Accueil</Link>
       </a>
       <a>
-      <Link to="/">Accueil</Link>
+      <Link to="/">Historique</Link>
       </a>
       <a>
-      <Link to="/">Accueil</Link>
+      <Link to="/">favoris</Link>
       </a>
       <a>
-      <Link to="/">Accueil</Link>
+      <Link to="/">deconnecter</Link>
       </a>
       </div>
      

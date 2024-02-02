@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import logo from './logo.png'
+import logo from '../logo.png'
  
   
 const Part1 = () =>  {
@@ -52,7 +52,7 @@ const Part1 = () =>  {
         </div>
         <div className='vi'>
         <div className='pas_compte'>Vous n'avez pas de compte?  </div>
-        <div className='inscrivez'>Inscrivez_vous </div>
+        <div className='inscrivez' href="./login">Inscrivez_vous </div>
         
         </div>
       </div>
