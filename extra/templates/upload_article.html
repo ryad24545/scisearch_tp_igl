@@ -1,0 +1,8 @@
+<!-- upload_article.html -->
+
+<h2>Upload Article</h2>
+<form method="post" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Upload</button>
+</form>
