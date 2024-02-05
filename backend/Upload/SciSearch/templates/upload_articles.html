@@ -1,0 +1,6 @@
+<!-- templates/upload_articles.html -->
+<form method="post" action="{% url 'upload_articles' %}">
+    {% csrf_token %}
+    {{ form }}
+    <button type="submit">Upload</button>
+</form>

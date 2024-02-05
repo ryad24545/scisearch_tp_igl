@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Confirmation</title>
+</head>
+<body>
+    <h1>Extraction réussie</h1>
+    <p>Les informations suivantes ont été extraites et enregistrées avec succès :</p>
+    
+    <ul>
+        <li><strong>Titre:</strong> {{ extracted_info.title }}</li>
+        <li><strong>Auteurs:</strong> {{ extracted_info.authors|join:", " }}</li>
+        <li><strong>Résumé:</strong> {{ extracted_info.summary }}</li>
+        <li><strong>Mots clés:</strong> {{ extracted_info.keywords }}</li>
+        <li><strong>Texte intégral:</strong> {{ extracted_info.full_text }}</li>
+        <li><strong>Références bibliographiques:</strong> {{ extracted_info.references }}</li>
+    </ul>
+
+    <!-- Ajoutez d'autres détails ou personnalisez la page selon vos besoins -->
+
+</body>
+</html>
