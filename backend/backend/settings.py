@@ -41,10 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'users',
-    'articles',
     'rest_framework',
     'djoser',
     'rest_framework_simplejwt',
+    'django_elasticsearch_dsl',
+    'django_elasticsearch_dsl_drf',
    
     
 ]
@@ -64,7 +65,7 @@ AUTH_USER_MODEL = 'users.NewUser'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR,'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -168,6 +169,11 @@ DJOSER = {
         'current_user': 'users.serializers.UserCreateSerializer',
         'user_delete': 'djoser.serializers.UserDeleteSerializer',
     }
+}
+ELASTICSEARCH_DSL = {
+    'default': {
+        'hosts': 'localhost:9200'
+    },
 }
 
 
