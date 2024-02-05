@@ -3,6 +3,7 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import { FiLogOut} from "react-icons/fi";
 import files from "../files.png";
 import { Link } from "react-router-dom";
+import Landing from 'C:/Users/RIAD/Desktop/SeaSearch-main/Frontend/src/Pages/Landing';
 
 
 function Navbar1() {
@@ -16,16 +17,16 @@ function Navbar1() {
     </div>
       <div className='flex  items-center gap-x-10'>
       <a>
-      <Link to="/">Accueil</Link>
+      <Link to="C:/Users/RIAD/Desktop/SeaSearch-main/Frontend/src/Pages/Landing">Accueil</Link>
       </a>
       <a>
-      <Link to="/">Accueil</Link>
+      <Link to="/">favoris</Link>
       </a>
       <a>
-      <Link to="/">Accueil</Link>
+      <Link to="/">historique</Link>
       </a>
       <a>
-      <Link to="/">Accueil</Link>
+      <Link to="/">Deconnecter</Link>
       </a>
       </div>
      
